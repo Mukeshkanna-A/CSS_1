@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Coffee</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar_container">
+        <div id="brand_name"> 
+            <a href= "#">&nbsp;<span><span>D</span>elicious&nbsp;<span>C</span>offee</span></a>
+        </div>
+        <ul>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <div class="menu">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    </nav>
+    <main>
+        <h1>Try Your Coffee</h1>
+        <p>Coffee –
+             Because bad mornings 
+            deserve a second chance</p>
+            <div class="btn_container">
+            <button id="button">Here you go..</button>
+            </div>
+    </main>
+    <script>
+        const menu = document.querySelector(".menu")
+        const menuList = document.querySelector('nav ul')
+        menu.addEventListener("click",()=>{
+            menuList.classList.toggle("showmenu")
+        })
+    </script>
+</body>
+</html>
